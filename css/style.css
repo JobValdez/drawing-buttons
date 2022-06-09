@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body{
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    margin: 5vh auto;
+    width: 1000px;
+    height: 500px;
+}
+
+#board {
+    background-color: burlywood;
+    background-image: url("../img/gridAll.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: solid #000000 3px;
+}
+
+@media all and (orientation: portrait){
+    #container {
+        display: none;
+    }
+
+    #landScapeMode{
+        display: block;
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        background: url(../img/useLandscapeMode.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+#buttonContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#buttonContainer button{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: chocolate;
+    color: #FFF;
+    font-size: 1vw;
+    border: none;
+    margin: 5px;
+}
+
+#buttonContainer button:hover{
+    background-color: antiquewhite;
+    color: #000000;
+    font-size: 1.2vw;
+    border: solid #000000 2px;
+}
+
+#buttonContainer button:active{
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: chocolate;
+    color: #FFF;
+    font-size: 1.2vw;
+    border: none;
+    margin: 5px;
+}
+
